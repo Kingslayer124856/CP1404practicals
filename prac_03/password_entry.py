@@ -1,4 +1,5 @@
 """Cassandra King"""
+
 def main():
     def get_password():
         password = input("Password: ")
@@ -10,4 +11,6 @@ def main():
 
     password = get_password()
     print('*' * len(password))
+
+
 main()

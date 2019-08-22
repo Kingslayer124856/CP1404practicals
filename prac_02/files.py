@@ -27,4 +27,3 @@ for line in in_file:
     total += number
 in_file.close()
 print(total)
-

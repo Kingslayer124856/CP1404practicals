@@ -2,9 +2,8 @@ finished = False
 result = 0
 while not finished:
     try:
-        result =(int(input("Enter an Integer; ")))
+        result = (int(input("Enter an Integer; ")))
         finished = True
-        pass
     except ValueError:
         print("Please enter a valid integer.")
 print("Valid result is:", result)

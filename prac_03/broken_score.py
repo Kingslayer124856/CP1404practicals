@@ -1,10 +1,10 @@
 
 def main():
     score = float(input("Enter Score: "))
-    print(evalulate_status(score))
+    print(evaluate_status(score))
 
 
-def evalulate_status(score):
+def evaluate_status(score):
     if score < 0 or score > 100:
         return "Invalid Score"
     elif score >= 90:

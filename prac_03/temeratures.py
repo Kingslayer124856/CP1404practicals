@@ -3,18 +3,6 @@ MENU = """C - Convert Celsius to Fahrenheit
     Q - Quit"""
 
 
-def celsius_to_fahrenheit():
-    celsius = float(input("Celsius: "))
-    fahrenheit = celsius * 9.0 / 5 + 32
-    return fahrenheit
-
-
-def fahreheit_to_celsius():
-    fahrenheit = float(input("Fahrenheit:"))
-    celsius = 5 / 9 * (fahrenheit - 32)
-    return celsius
-
-
 def main():
     print(MENU)
     choice = input(">>> ").upper()
@@ -23,13 +11,25 @@ def main():
             fahrenheit = celsius_to_fahrenheit()
             print("Result: {:.2f} F".format(fahrenheit))
         elif choice == "F":
-            celsius = fahreheit_to_celsius()
+            celsius = fahrenheit_to_celsius()
             print("Result: {:.2f} C".format(celsius))
         else:
             print("Invalid option")
         print(MENU)
         choice = input(">>> ").upper()
     print("Thank you.")
+
+
+def celsius_to_fahrenheit():
+    celsius = float(input("Celsius: "))
+    fahrenheit = celsius * 9.0 / 5 + 32
+    return fahrenheit
+
+
+def fahrenheit_to_celsius():
+    fahrenheit = float(input("Fahrenheit:"))
+    celsius = 5 / 9 * (fahrenheit - 32)
+    return celsius
 
 
 main()

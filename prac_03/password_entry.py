@@ -1,8 +1,10 @@
 """Cassandra King"""
 
+
 def main():
     password = get_password()
     print_asterisks(password)
+
 
 def get_password():
     password = input("Password: ")
@@ -11,6 +13,7 @@ def get_password():
         password = input("Password: ")
     else:
         return password
+
 
 def print_asterisks(sequence):
     print('*' * len(sequence))

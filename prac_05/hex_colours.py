@@ -12,5 +12,6 @@ COLOUR_CODES = {"coral": "#ff7f50", "chocolate": "#d2691e",
 
 colour_name = input("Enter a colour name: ").lower()
 while colour_name != "":
-    print("The code for \"{}\" is {}".format(colour_name, COLOUR_CODES.get(colour_name)))
+    print("The code for \"{}\" is {}".format(colour_name,
+                                             COLOUR_CODES.get(colour_name)))
 colour_name = input("Enter a colour name: ").lower()

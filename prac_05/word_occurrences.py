@@ -3,6 +3,7 @@ CP1404 Practical
 Do from Scratch Exercise
 Word Occurrences in a string
 """
+
 word_count = {}
 text = input("Text: ")
 words = text.split()
